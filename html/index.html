@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto-2</title>
+    <!-- script -->
+    <script src="https://kit.fontawesome.com/2608d06942.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</head>
+    <body>
+        <div class="container-fluid">
+            <h3 class="text-center py-3">Proyecto-2</h3>
+        </div>
+
+        <div class="container-fluid  bg-light">
+            <div class="container">
+                <ul class="nav nav-justified py-2 nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../php/Listado.php">Listado</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../html/index.html">Ingreso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../php/Busqueda.php">Busqueda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../php/Eliminar.php">Eliminar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../php/Modificar.php">Modificar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="container-fluid">		
+            <div class="container py-5">        
+                <form name="inicio" action="../php/Insertar.php" method="post">
+                    <div class="form-group">
+                        <label>Seccion:</label>
+                        <input type="text" name="Seccion" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Nombre:</label>
+                        <input type="text" name="Nombre" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Precio:</label>
+                        <input type="text" name="Precio" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Pais de Origen:</label>
+                        <input type="text" name="PaisOrigen" class="form-control">
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-2 col-form-label">Fecha</label>
+                        <div class="col-10">
+                          <input class="form-control" type="date" name="Fecha">
+                        </div>
+                      </div>
+                    <div class="form-group">
+                        <label>Foto del Producto</label>
+                        <input type="file" name="Imagen" class="form-control-file">
+                    </div>
+                    <button type="submit" name="Enviar" value="Enviar" class="btn btn-primary">Cargar</button>
+                </form>        
+            </div>        
+        </div>
+
+    </body>
+</html>
