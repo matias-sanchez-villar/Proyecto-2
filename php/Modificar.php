@@ -69,10 +69,6 @@
                         <input class="form-control" type="date" name="Fecha">
                     </div>
                 </div>
-                <div class="form-group">
-                    <label>Foto del Producto</label>
-                    <input type="file" name="Imagen" class="form-control-file">
-                </div>
                 <button type="submit" name="Enviar" value="Enviar" class="btn btn-primary">Modificar</button>
             </form>
         </div>
